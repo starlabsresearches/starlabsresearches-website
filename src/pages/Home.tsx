@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-6 max-w-5xl">
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight text-white mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6">
             Star Labs Researches
           </h1>
 
@@ -50,6 +51,9 @@ export default function Home() {
 
         </div>
       </section>
+
+      
+      <Footer />
     </>
   );
 }

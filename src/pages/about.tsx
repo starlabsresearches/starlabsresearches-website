@@ -1,157 +1,189 @@
+import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#020817] text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+    <>
+      <Navbar />
+      
 
-        {/* About Section */}
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
+      <div className="min-h-screen bg-[#020817] text-white pt-32 pb-20 px-6">
+        <div className="max-w-7xl mx-auto">
 
-          <div>
-            <h1 className="text-5xl font-bold mb-8">
-              About Star Labs
-            </h1>
+          {/* About Section */}
 
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Founded by Sournamalya "Grace" Bhavani, Star Labs Researches is
-              an independent research initiative focused on understanding the
-              universe through data analysis, statistical modelling, and
-              innovative science.
-            </p>
+          <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
 
-            <button className="text-blue-400 font-medium hover:text-blue-300 transition">
-              Learn more about us →
-            </button>
+            <div>
+              <h1 className="text-5xl font-bold mb-8">
+                About Star Labs
+              </h1>
+
+              <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                Founded by Sournamalya Bhavani, Star Labs Researches is an
+                independent astronomy research initiative dedicated to exploring
+                the universe through data-driven discovery, computational
+                astrophysics, machine learning, and statistical modelling.
+              </p>
+
+              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                Our mission is to create opportunities for students and
+                early-career researchers to contribute to meaningful scientific
+                investigations while advancing our understanding of stars,
+                exoplanets, and time-domain astrophysics.
+              </p>
+
+              <Link
+                to="/blog"
+                className="text-blue-400 font-medium hover:text-blue-300 transition text-lg"
+              >
+                Explore Our Journey →
+              </Link>
+            </div>
+
+            <div className="bg-[#07172f] border border-[#123a74] rounded-3xl p-8">
+
+              <p className="text-blue-400 uppercase tracking-[0.3em] text-sm mb-4">
+                OUR VISION
+              </p>
+
+              <p className="text-gray-200 leading-relaxed text-lg">
+                To push the boundaries of astronomical research through
+                curiosity, collaboration, computational excellence, and
+                accessible scientific discovery.
+              </p>
+
+            </div>
+
           </div>
 
-          <div className="bg-[#07172f] border border-[#123a74] rounded-3xl p-8">
-            <p className="text-blue-400 uppercase tracking-[0.3em] text-sm mb-4">
-              OUR MISSION
-            </p>
+          {/* Research Areas */}
 
-            <p className="text-gray-200 leading-relaxed text-lg">
-              To push the boundaries of astronomical research through
-              curiosity, collaboration, and computational excellence.
-            </p>
+          <h2 className="text-4xl font-bold text-center mb-14 text-blue-400">
+            Research Areas
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+
+            {/* Stellar Astrophysics */}
+
+            <div
+              className="
+                bg-gradient-to-b from-[#071b3a] to-[#041224]
+                border border-[#123a74]
+                rounded-2xl
+                h-[150px]
+                flex flex-col items-center justify-center
+                hover:border-blue-400
+                transition
+              "
+            >
+              <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
+                ☼
+              </div>
+
+              <h3 className="font-semibold text-center">
+                Stellar Astrophysics
+              </h3>
+            </div>
+
+            {/* Exoplanet Science */}
+
+            <div
+              className="
+                bg-gradient-to-b from-[#071b3a] to-[#041224]
+                border border-[#123a74]
+                rounded-2xl
+                h-[150px]
+                flex flex-col items-center justify-center
+                hover:border-blue-400
+                transition
+              "
+            >
+              <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
+                ⊕
+              </div>
+
+              <h3 className="font-semibold text-center">
+                Exoplanet Science
+              </h3>
+            </div>
+
+            {/* Time-Domain Astronomy */}
+
+            <div
+              className="
+                bg-gradient-to-b from-[#071b3a] to-[#041224]
+                border border-[#123a74]
+                rounded-2xl
+                h-[150px]
+                flex flex-col items-center justify-center
+                hover:border-blue-400
+                transition
+              "
+            >
+              <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
+                ◔
+              </div>
+
+              <h3 className="font-semibold text-center">
+                Time-Domain Astronomy
+              </h3>
+            </div>
+
+            {/* Machine Learning */}
+
+            <div
+              className="
+                bg-gradient-to-b from-[#071b3a] to-[#041224]
+                border border-[#123a74]
+                rounded-2xl
+                h-[150px]
+                flex flex-col items-center justify-center
+                hover:border-blue-400
+                transition
+              "
+            >
+              <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
+                ⚙
+              </div>
+
+              <h3 className="font-semibold text-center">
+                Machine Learning
+              </h3>
+            </div>
+
+            {/* Bayesian Statistics */}
+
+            <div
+              className="
+                bg-gradient-to-b from-[#071b3a] to-[#041224]
+                border border-[#123a74]
+                rounded-2xl
+                h-[150px]
+                flex flex-col items-center justify-center
+                hover:border-blue-400
+                transition
+              "
+            >
+              <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
+                Σ
+              </div>
+
+              <h3 className="font-semibold text-center">
+                Bayesian Statistics
+              </h3>
+            </div>
+
           </div>
+          
+    
 
         </div>
-
-        {/* Research Areas */}
-
-        <h2 className="text-4xl font-bold text-center mb-14 text-blue-400">
-          Research Areas
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-
-          {/* Stellar Astrophysics */}
-          <div
-            className="
-              bg-gradient-to-b from-[#071b3a] to-[#041224]
-              border border-[#123a74]
-              rounded-2xl
-              h-[150px]
-              flex flex-col items-center justify-center
-              hover:border-blue-400
-              transition
-            "
-          >
-            <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
-              ☼
-            </div>
-
-            <h3 className="font-semibold text-center">
-              Stellar Astrophysics
-            </h3>
-          </div>
-
-          {/* Exoplanet Science */}
-          <div
-            className="
-              bg-gradient-to-b from-[#071b3a] to-[#041224]
-              border border-[#123a74]
-              rounded-2xl
-              h-[150px]
-              flex flex-col items-center justify-center
-              hover:border-blue-400
-              transition
-            "
-          >
-            <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
-              ⊕
-            </div>
-
-            <h3 className="font-semibold text-center">
-              Exoplanet Science
-            </h3>
-          </div>
-
-          {/* Time-Domain Astronomy */}
-          <div
-            className="
-              bg-gradient-to-b from-[#071b3a] to-[#041224]
-              border border-[#123a74]
-              rounded-2xl
-              h-[150px]
-              flex flex-col items-center justify-center
-              hover:border-blue-400
-              transition
-            "
-          >
-            <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
-              ◔
-            </div>
-
-            <h3 className="font-semibold text-center">
-              Time-Domain Astronomy
-            </h3>
-          </div>
-
-          {/* Machine Learning */}
-          <div
-            className="
-              bg-gradient-to-b from-[#071b3a] to-[#041224]
-              border border-[#123a74]
-              rounded-2xl
-              h-[150px]
-              flex flex-col items-center justify-center
-              hover:border-blue-400
-              transition
-            "
-          >
-            <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
-              ⚙
-            </div>
-
-            <h3 className="font-semibold text-center">
-              Machine Learning
-            </h3>
-          </div>
-
-          {/* Bayesian Statistics */}
-          <div
-            className="
-              bg-gradient-to-b from-[#071b3a] to-[#041224]
-              border border-[#123a74]
-              rounded-2xl
-              h-[150px]
-              flex flex-col items-center justify-center
-              hover:border-blue-400
-              transition
-            "
-          >
-            <div className="w-12 h-12 rounded-full border border-blue-500 flex items-center justify-center text-blue-400 text-xl mb-4">
-              Σ
-            </div>
-
-            <h3 className="font-semibold text-center">
-              Bayesian Statistics
-            </h3>
-          </div>
-
-        </div>
-
       </div>
-    </div>
+      <Footer />
+    </>
   );
+  
 }

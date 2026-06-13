@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import grace from "../assets/team/grace.jpg";
 import deepika from "../assets/team/deepika.jpg";
@@ -171,6 +172,7 @@ export default function Team() {
 
         </div>
       </div>
+      <Footer />
     </>
   );
 }

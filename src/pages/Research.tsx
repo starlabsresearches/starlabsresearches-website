@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ResearchCard from "../components/ResearchCard";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Research() {
   const [filter, setFilter] = useState("All");
@@ -132,6 +133,7 @@ export default function Research() {
 
         </div>
       </div>
+      <Footer />
     </>
   );
 }
